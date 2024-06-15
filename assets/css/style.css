@@ -1,14 +1,13 @@
-* {
-    
-}
 
+/*this targets the entire html but doesnt target any other elements (like the header, body, and footer sections)*/
+/*it changes the background to have a gradient*/
 html {
     background: black;
     background: linear-gradient(to right, rgb(158, 157, 157), rgb(99, 98, 98) 50%, rgb(47, 47, 47));
     
 }
 
-
+/*this affects the top of the page, it aligns the items to the top of the page and centers the content*/
 header section {
     display: flex;
     margin: 30px;
@@ -19,16 +18,19 @@ header section {
     border: solid green 5px;
 }
 
+/*this affects the first headings text. This is displayed first on the page */
 h1 {
-    
     justify-content: center;
 }
 
+/*this affects the body element. Changes the flex dirrection to be column. This will display all main sections from top to bottom */
 body {
     display: flex;
     flex-direction: column;
 }
 
+/*this creates the main section. Tells all boxes inside of the main one to be centered on the y and x axis.
+Also changes the flex direction to row to have the content boxes be displayed one after the other */
 .main-box {
     display: flex;
     flex-direction: row;
@@ -40,6 +42,8 @@ body {
     padding-top: 1rem;
 }
 
+/*this creates the content boxes in which the main information of the page is held. 
+Its position is set to relative to help display the heading text of the boxes */
 .main-box div {
     display: flex;
     margin: 20px;
@@ -50,6 +54,8 @@ body {
 
 }
 
+/* this displays the heading text of the main boxes. The z-index is to display it ontop of the surrounding box.
+The flex direction is to display the information in a column. Translate is to move the box to its position in the middle of the top border */
 .main-box div h2 {
     display: flex;
     position: absolute;
@@ -67,6 +73,7 @@ p {
     
 }
 
+/* this affects the code text that will be inserted below the blurb. Needs to fill the area of the box */
 span {
     display: flex;
     margin: 20px;
@@ -77,6 +84,7 @@ span {
     transform: translateY(50%);
 }
 
+/* this affects the footer of the page */
 footer {
     display: flex;
     margin-top: 20px;

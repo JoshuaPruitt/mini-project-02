@@ -23,6 +23,11 @@ h1 {
     justify-content: center;
 }
 
+/* this targets the paragraph inside of header*/
+header p {
+    text-align: center;
+}
+
 /*this affects the body element. Changes the flex dirrection to be column. This will display all main sections from top to bottom */
 body {
     display: flex;
@@ -34,7 +39,6 @@ Also changes the flex direction to row to have the content boxes be displayed on
 .main-box {
     display: flex;
     flex-direction: row;
-
     border: solid red 5px;
     justify-content: center;
     align-items: center;
@@ -66,11 +70,11 @@ The flex direction is to display the information in a column. Translate is to mo
 
     background-color: white;
     transform: translateY(-260%);
-    
+    margin-top: 70px;               /* Margin-top creates a margin from top and moves heading 2 down */
 }
 
 p {
-    
+
 }
 
 /* this affects the code text that will be inserted below the blurb. Needs to fill the area of the box */
@@ -82,6 +86,7 @@ span {
 
     min-width: 200px;
     transform: translateY(50%);
+    margin-top: -100px;
 }
 
 /* this affects the footer of the page */

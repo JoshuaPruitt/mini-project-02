@@ -22,11 +22,10 @@
 <header>
     <section>
         <h1>CSS Snippet Cheatsheet</h1>
-        
+        <br>   
         <div>
-            </br>
-            <p>Placeholder</p>
-        </div>
+            <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
+        </div> 
     </section>
 
 </header>
@@ -38,89 +37,120 @@
         
         <!--this contains all the smaller information boxes-->
         <div>
-            <h2>
-                Box 1
-
-            </h2>
-
+            <h2>Flexbox Row</h2>
             <p>
-                Placeholder Placeholder Placeholder
+                Use these three properties to create a Flexbox row layout.
                 <!--the span will contain the code that we wish to show to the user-->
-                <span></span>
+                <span>
+                    .row {
+                        <br>
+                        display:flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        <br>
+                    }
+                </span>
             </p>
-        
+         </div>
 
+        <div>
+            <h2>Flexbox Column</h2>
+            <p>
+                Use this to create a Flexbox column layout.
+                <span>
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                        <br>
+                    }
+                </span>
+            </p>
         </div>
 
         <div>
-            <h2>
-                Box 2
-            </h2>
+            <h2>CSS Grid Layout</h2>
 
             <p>
-                Placeholder Placeholder Placeholder
-                <span></span>
+                Build a 12-column layout using CSS Grid
+                <span>
+                    .grid {
+                        <br>
+                        display: grid;
+                        width: 100%;
+                        grid-template-columns: repeat (12, 1fr);
+                        <br>
+                    }
+                </span>
             </p>
-        
-
         </div>
 
         <div>
-            <h2>
-                Box 3
-            </h2>
-
+            <h2>Linear Gradients</h2>
             <p>
-                Placeholder Placeholder Placeholder
-                <span></span>
+                This will create a background linear gradient from top to bottom.
+                <span>
+                    .linear-gradient-background {
+                        <br>
+                        background-image: linear-gradient(
+                            <br>
+                            rgba(232, 102, 236, 0.3) 0%,
+                            <br>
+                            rgba(232, 102, 236, 0.6) 100%
+                        );
+                        <br>
+                    }
+                </span>
             </p>
-        
-
         </div>
 
         <div>
-            <h2>
-                Box 4
-            </h2>
-
+            <h2>Box Transition Glow</h2>
             <p>
-                Placeholder Placeholder Placeholder
-                <span></span>
-            </p>
-        
+                Use this transition and box shadows to glow on hover.
+                <span>
+                    .code-card .card-header {
+                        <br>
+                        border-radius: 8px;
+                        <br>
+                        transition: all 0.5s ease-in-out;
+                        <br>
+                    }
 
+                    .code-card:hover,
+                    <br>
+                    .code-card:hover .card-header {
+                        <br>
+                        box-shadow: inset 0px 0px 8px
+                        <br>
+                        rgba(232, 102, 236, 1), 0 0 15px
+                        <br>
+                        rgba(232, 102, 236, 1);
+                        <br>
+                    }
+                </span>
+            </p>
         </div>
 
         <div>
-            <h2>
-                Box 5
-            </h2>
-
+            <h2>Overlay Card with Title</h2>
             <p>
-                Placeholder Placeholder Placeholder
-                <span></span>
+                Use position properties and negative margins to raise elements higher than their natural starting point.
+                <span>
+                    .card-header {
+                        <br>
+                        position: relative;
+                        <br>
+                        margin-top: -20px;
+                        <br>
+                    }
+                </span>
             </p>
-        
-
-        </div>
-
-        <div>
-            <h2>
-                Box 6
-            </h2>
-
-            <p>
-                Placeholder Placeholder Placeholder
-                <span></span>
-            </p>
-        
-
         </div>
     </section>
 </body>
 
 <!--this will contain the bottom tag of the page-->
 <footer>
-
+        Made with ❤ and CSS
 </footer>
 </html>

@@ -10,23 +10,24 @@ html {
 /*this affects the top of the page, it aligns the items to the top of the page and centers the content*/
 header section {
     display: flex;
+    flex-direction: column;
     margin: 30px;
     padding: 30px;
     font-size: 25px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     border: solid green 5px;
 }
 
 /*this affects the first headings text. This is displayed first on the page */
-h1 {
+/* h1 {
     justify-content: center;
-}
+} */
 
 /* this targets the paragraph inside of header*/
-header p {
+/* header section p {
     text-align: center;
-}
+} */
 
 /*this affects the body element. Changes the flex dirrection to be column. This will display all main sections from top to bottom */
 body {
@@ -36,7 +37,7 @@ body {
 
 /*this creates the main section. Tells all boxes inside of the main one to be centered on the y and x axis.
 Also changes the flex direction to row to have the content boxes be displayed one after the other */
-.main-box {
+main{
     display: flex;
     flex-direction: row;
     border: solid red 5px;
@@ -48,45 +49,58 @@ Also changes the flex direction to row to have the content boxes be displayed on
 
 /*this creates the content boxes in which the main information of the page is held. 
 Its position is set to relative to help display the heading text of the boxes */
-.main-box div {
+main article {
     display: flex;
-    margin: 20px;
+    margin: 0 20px;
+    margin-bottom: 20px;
     border: solid black 4px;
     padding: 10vh 18vh ;
-    position: relative;
+    /* position: relative; */
     justify-content: center;
+    flex-direction: column;
+
+    max-width: 600px;
+    min-width: 200px;
+    max-height: 500px;
 
 }
 
 /* this displays the heading text of the main boxes. The z-index is to display it ontop of the surrounding box.
 The flex direction is to display the information in a column. Translate is to move the box to its position in the middle of the top border */
-.main-box div h2 {
-    display: flex;
-    position: absolute;
+main article h2  {
+    /* position: absolute; */
     z-index: 1;
     padding: 20px 25%;
     border: black solid 4px;
-    flex-direction: column;
 
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
     background-color: white;
-    transform: translateY(-260%);
-    margin-top: 70px;               /* Margin-top creates a margin from top and moves heading 2 down */
+    transform: translateY(260%);
+    
 }
 
-p {
+.box-header {
+    font-size: 20px;
+}
 
+main article p {
+    padding: 200px;
 }
 
 /* this affects the code text that will be inserted below the blurb. Needs to fill the area of the box */
-span {
+body main article section {
     display: flex;
     margin: 20px;
     padding: 30%;
-    background-color: aqua;
+    background-color: rgb(88, 174, 174);
+    justify-content: center;
 
-    min-width: 200px;
+    /* min-width: 200px; */
     transform: translateY(50%);
-    margin-top: -100px;
+    /* margin-top: -100px; */
 }
 
 /* this affects the footer of the page */

@@ -33,120 +33,133 @@
 <!--main section of the page-->
 <body>
     <!--box that contains all the information boxes-->
-    <section class="main-box">
+    <main>
         
         <!--this contains all the smaller information boxes-->
-        <div>
-            <h2>Flexbox Row</h2>
+        <article>
+            <div class="box-header">
+                <h2>Flexbox Row</h2>
+            </div>
             <p>
                 Use these three properties to create a Flexbox row layout.
                 <!--the span will contain the code that we wish to show to the user-->
-                <span>
-                    .row {
-                        <br>
-                        display:flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        <br>
+            <section>
+                .row {
+                    <br>
+                    display:flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    <br>
                     }
-                </span>
+            </section>
             </p>
-         </div>
+        </article>
 
-        <div>
-            <h2>Flexbox Column</h2>
+        <article>
+            <div class="box-header">
+                <h2>Flexbox Column</h2>
+            </div>
             <p>
                 Use this to create a Flexbox column layout.
-                <span>
-                    .column {
-                        display: flex;
-                        flex-direction: column;
-                        <br>
-                    }
-                </span>
+            <section>
+                .column {
+                    display: flex;
+                    flex-direction: column;
+                    <br>
+                }
+            </section>
             </p>
-        </div>
+        </article>
 
-        <div>
-            <h2>CSS Grid Layout</h2>
-
+        <article>
+            <div class="box-header">
+                <h2>CSS Grid Layout</h2>
+            </div>
             <p>
                 Build a 12-column layout using CSS Grid
-                <span>
-                    .grid {
-                        <br>
-                        display: grid;
-                        width: 100%;
-                        grid-template-columns: repeat (12, 1fr);
-                        <br>
-                    }
-                </span>
+            <section>
+                    
+                .grid {
+                    <br>
+                    display: grid;
+                    width: 100%;
+                    grid-template-columns: repeat (12, 1fr);
+                    <br>
+                }
+                
+            </section>
             </p>
-        </div>
+        </article>
 
-        <div>
-            <h2>Linear Gradients</h2>
+        <article>
+            <div class="box-header">
+                <h2>Linear Gradients</h2>
+            </div>
             <p>
                 This will create a background linear gradient from top to bottom.
-                <span>
-                    .linear-gradient-background {
-                        <br>
-                        background-image: linear-gradient(
-                            <br>
-                            rgba(232, 102, 236, 0.3) 0%,
-                            <br>
-                            rgba(232, 102, 236, 0.6) 100%
-                        );
-                        <br>
+            <section>
+                .linear-gradient-background {
+                    <br>
+                    background-image: linear-gradient(
+                    <br>
+                    rgba(232, 102, 236, 0.3) 0%,
+                    <br>
+                    rgba(232, 102, 236, 0.6) 100%
+                    );
+                    <br>
                     }
-                </span>
+            </section>
             </p>
-        </div>
+        </article>
 
-        <div>
-            <h2>Box Transition Glow</h2>
+        <article>
+            <div class="box-header">
+                <h2>Box Transition Glow</h2>
+            </div>
             <p>
                 Use this transition and box shadows to glow on hover.
-                <span>
-                    .code-card .card-header {
-                        <br>
-                        border-radius: 8px;
-                        <br>
-                        transition: all 0.5s ease-in-out;
-                        <br>
-                    }
-
-                    .code-card:hover,
+            <section>
+                .code-card .card-header {
                     <br>
-                    .code-card:hover .card-header {
-                        <br>
-                        box-shadow: inset 0px 0px 8px
-                        <br>
-                        rgba(232, 102, 236, 1), 0 0 15px
-                        <br>
-                        rgba(232, 102, 236, 1);
-                        <br>
-                    }
-                </span>
-            </p>
-        </div>
+                    border-radius: 8px;
+                    <br>
+                    transition: all 0.5s ease-in-out;
+                    <br>
+                }
 
-        <div>
-            <h2>Overlay Card with Title</h2>
+                .code-card:hover,
+                <br>
+                .code-card:hover .card-header {
+                    <br>
+                    box-shadow: inset 0px 0px 8px
+                    <br>
+                    rgba(232, 102, 236, 1), 0 0 15px
+                    <br>
+                        <!-- rgba(232, 102, 236, 1);
+                        <br> -->
+                    }
+            </section>
+            </p>
+        </article>
+
+        <article>
+            <div class="box-header">
+                <h2>Overlay Card with Title</h2>
+            </div>
             <p>
                 Use position properties and negative margins to raise elements higher than their natural starting point.
-                <span>
-                    .card-header {
-                        <br>
-                        position: relative;
-                        <br>
-                        margin-top: -20px;
-                        <br>
-                    }
-                </span>
+            <section>
+                .card-header {
+                    <br>
+                    position: relative;
+                    <br>
+                    margin-top: -20px;
+                    <br>
+                }
+            </section>
             </p>
-        </div>
-    </section>
+        </article>
+    </main>
 </body>
 
 <!--this will contain the bottom tag of the page-->
